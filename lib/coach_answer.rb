@@ -11,4 +11,11 @@ end
 
 def coach_answer_enhanced(your_message)
   # TODO: return coach answer to your_message, with additional custom rules of yours!
+  if your_message == "I am going to work right now SIR !" then
+    return ""
+  elsif your_message.upcase == your_message then
+    return "I can feel your motivation ! #{coach_answer(your_message)}"
+  else
+    return coach_answer(your_message)
+  end
 end
